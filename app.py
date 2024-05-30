@@ -81,6 +81,25 @@ if submit :
 
 
 
+def main():
+    # Set the background color using CSS
+    st.markdown(
+        """
+        <style>
+        body {
+            background-color: #e6f3ff;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+    
+
+if __name__ == "__main__":
+    main()
+
+
 
     
 
