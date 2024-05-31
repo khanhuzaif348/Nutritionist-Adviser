@@ -38,10 +38,10 @@ def input_image_setup(uploaded_file):
 
 ## writing code for web view 
 
-st.set_page_config(page_title ="calori Adviser app  ")
+st.set_page_config(page_title ="Nutritionist app  ")
 
 
-st.header(" calori Adviser app")
+st.header("Nutritionist  app")
 uploaded_file  = st.file_uploader("choose an image...",type=["jpg","jpeg","png"])
 image =""
 if uploaded_file is not None: 
