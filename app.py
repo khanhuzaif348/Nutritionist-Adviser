@@ -41,7 +41,7 @@ def input_image_setup(uploaded_file):
 st.set_page_config(page_title ="Nutrition assistant app  ")
 
 
-st.header("Nutritionist  app")
+st.header("Nutrition assistant app")
 uploaded_file  = st.file_uploader("choose an image...",type=["jpg","jpeg","png"])
 image =""
 if uploaded_file is not None: 
