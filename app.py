@@ -38,7 +38,7 @@ def input_image_setup(uploaded_file):
 
 ## writing code for web view 
 
-st.set_page_config(page_title ="Nutritionist app  ")
+st.set_page_config(page_title ="Nutrition assistant app  ")
 
 
 st.header("Nutritionist  app")
