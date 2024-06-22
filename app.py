@@ -82,35 +82,6 @@ if submit :
 
 
 
-import streamlit as st
-import streamlit_authenticator as stauth
-
-# Define the users, passwords, and cookie settings
-users = ['user1', 'user2']
-passwords = ['password1', 'password2']
-names = ['User One', 'User Two']
-
-# Create an authenticator object
-authenticator = stauth.Authenticate(names, users, passwords, 'some_cookie_name', 'some_signature_key', cookie_expiry_days=30)
-
-# Display the login form
-name, authentication_status, username = authenticator.login('Login', 'main')
-
-if authentication_status:
-    st.write(f'Welcome {name}!')
-    # Your main app code goes here
-    st.title('Main Application')
-    st.write('This is the main content of the application.')
-elif authentication_status == False:
-    st.error('Username/password is incorrect')
-elif authentication_status == None:
-    st.warning('Please enter your username and password')
-
-# Add a logout button
-if authentication_status:
-    if st.button('Logout'):
-        authenticator.logout('main')
-        st.experimental_rerun()
 
 
 
